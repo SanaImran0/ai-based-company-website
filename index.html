@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Solutions - Your Tech Partner</title>
+    <title>Dummy IT Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white p-6 text-center">
-        <h1 class="text-3xl font-bold">IT Solutions</h1>
-        <p class="text-lg">Your Reliable Tech Partner</p>
+
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-4xl font-bold">Welcome to Our IT Company</h1>
+        <img id="header-img" src="your-image.jpg" alt="IT Company" class="w-3/4 mx-auto mt-4">
     </header>
 
-    <section class="container mx-auto p-6 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Our Services</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Web Development</h3>
-                <p>We build responsive and dynamic websites.</p>
+    <!-- Services Section -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="service-card bg-white shadow-lg p-6 rounded-lg transition-transform">
+                <h3 class="text-lg font-bold">Web Development</h3>
+                <p>We build amazing websites...</p>
             </div>
-            <div class="bg-white p-6 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Cloud Solutions</h3>
-                <p>Optimize your business with our cloud expertise.</p>
+            <div class="service-card bg-white shadow-lg p-6 rounded-lg transition-transform">
+                <h3 class="text-lg font-bold">App Development</h3>
+                <p>We create high-performance mobile apps...</p>
             </div>
-            <div class="bg-white p-6 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Cyber Security</h3>
-                <p>Protect your digital assets with our security services.</p>
+            <div class="service-card bg-white shadow-lg p-6 rounded-lg transition-transform">
+                <h3 class="text-lg font-bold">Digital Marketing</h3>
+                <p>We boost your online presence...</p>
             </div>
         </div>
     </section>
 
-    <section class="bg-gray-200 p-6 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-        <p>Email: contact@itsolutions.com | Phone: +123 456 7890</p>
+    <!-- Call to Action -->
+    <div class="text-center py-10">
+        <button class="animated-btn bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold">
+            Get Started
+        </button>
+    </div>
+
+    <!-- Image Slider -->
+    <section class="overflow-hidden py-10">
+        <div class="image-slider flex space-x-4">
+            <img src="image1.jpg" class="slider-img w-48">
+            <img src="image2.jpg" class="slider-img w-48">
+            <img src="image3.jpg" class="slider-img w-48">
+        </div>
     </section>
 
-    <footer class="bg-blue-600 text-white text-center p-4">
-        <p>&copy; 2025 IT Solutions. All Rights Reserved.</p>
-    </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
