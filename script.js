@@ -33,3 +33,18 @@ gsap.to(".slider-img", {
     repeat: -1, 
     ease: "linear"
 });
+
+// Scroll-triggered fade-in animations
+gsap.utils.toArray(".fade-in").forEach((element) => {
+    gsap.from(element, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 60%",
+            toggleActions: "play none none reverse",
+        },
+    });
+});

@@ -16,8 +16,8 @@
         <img id="header-img" src="your-image.jpg" alt="IT Company" class="w-3/4 mx-auto mt-4">
     </header>
 
-    <!-- Services Section -->
-    <section class="container mx-auto p-8">
+    <!-- Services Section (Scroll Trigger) -->
+    <section class="container mx-auto p-8 fade-in">
         <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="service-card bg-white shadow-lg p-6 rounded-lg transition-transform">
@@ -36,19 +36,42 @@
     </section>
 
     <!-- Call to Action -->
-    <div class="text-center py-10">
+    <div class="text-center py-10 fade-in">
         <button class="animated-btn bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold">
             Get Started
         </button>
     </div>
 
     <!-- Image Slider -->
-    <section class="overflow-hidden py-10">
+    <section class="overflow-hidden py-10 fade-in">
         <div class="image-slider flex space-x-4">
             <img src="image1.jpg" class="slider-img w-48">
             <img src="image2.jpg" class="slider-img w-48">
             <img src="image3.jpg" class="slider-img w-48">
         </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container mx-auto p-8 fade-in">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+        <form action="https://formsubmit.co/YOUR-EMAIL" method="POST" class="max-w-lg mx-auto bg-white shadow-lg p-6 rounded-lg">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" name="name" class="w-full p-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" name="email" class="w-full p-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea name="message" class="w-full p-2 border rounded-lg" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold w-full">
+                Send Message
+            </button>
+        </form>
     </section>
 
     <script src="script.js"></script>
